@@ -49,6 +49,8 @@ optional arguments:
 
 4. MultiGPU usage: use `--gpu_num N` to use N GPUs. It is passed to the [Keras multi_gpu_model()](https://keras.io/utils/#multi_gpu_model).
 
+5. Data Augmentation: use [DataAugmentation.ipynb](https://github.com/kevinisbest/keras-yolo3/blob/master/DataAugmentation.ipynb) to rotate the images and check the bounding boxes (remember to change the path of `xmlpath` `imgpath` `rotated_xmlpath` `rotated_imgpath`)
+
 ## Training
 
 1. Generate your own annotation file and class names file.  
