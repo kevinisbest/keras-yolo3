@@ -99,7 +99,7 @@ class YOLO(object):
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
 
-    def detect_image(self, image):
+    def detect_image(self, image, file):
         start = timer()
 
         if self.model_image_size != (None, None):
@@ -145,6 +145,7 @@ class YOLO(object):
             bottom = min(image.size[1], np.floor(bottom + 0.5).astype('int32'))
             right = min(image.size[0], np.floor(right + 0.5).astype('int32'))
             print(label, (left, top), (right, bottom))
+            file.write('%s %f %d %d %d %d\n' %(label,score,left,top,right,bottom)) #write information in txtfile
 
             if top - label_size[1] >= 0:
                 text_origin = np.array([left, top - label_size[1]])
