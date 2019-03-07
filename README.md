@@ -86,7 +86,7 @@ Reference : [calculate mAP](https://github.com/Cartucho/mAP)
 1. `python yolo_image.py TEST_IMAGE_DIRECTORY`
 2. Output will be located **output/**
 3. The predicted objects txt files will be located **outputTXT/**
-4. Create the ground-truth txt files by `python CreateGroundTruth.py`
+4. Create the ground-truth txt files by `python CreateGroundTruth.py` (or you can find some scripts in [here](https://github.com/Cartucho/mAP/tree/master/extra))
 5. [run the mAP code](https://github.com/Cartucho/mAP#running-the-code)
 ---
 
