@@ -81,13 +81,13 @@ If you want to use original pretrained weights for YOLOv3:
 
 ---
 ## Demo and Evaluate the performance
-Reference : [calculate mAP](https://github.com/Cartucho/mAP) 
+Reference : [Object-Detection-Metrics](https://github.com/rafaelpadilla/Object-Detection-Metrics) 
 
 1. `python yolo_image.py TEST_IMAGE_DIRECTORY`
 2. Output will be located **output/**
 3. The predicted objects txt files will be located **outputTXT/**
 4. Create the ground-truth txt files by `python CreateGroundTruth.py` (or you can find some scripts in [here](https://github.com/Cartucho/mAP/tree/master/extra))
-5. [run the mAP code](https://github.com/Cartucho/mAP#running-the-code)
+5. [run the mAP code](https://github.com/rafaelpadilla/Object-Detection-Metrics#optional-arguments)
 ---
 
 ## Some issues to know
