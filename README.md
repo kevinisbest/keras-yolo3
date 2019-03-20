@@ -86,7 +86,7 @@ Reference : [Object-Detection-Metrics](https://github.com/rafaelpadilla/Object-D
 1. `python yolo_image.py TEST_IMAGE_DIRECTORY`
 2. Output will be located **output/**
 3. The predicted objects txt files will be located **outputTXT/**
-4. Create the ground-truth txt files by `python CreateGroundTruth.py` (or you can find some scripts in [here](https://github.com/Cartucho/mAP/tree/master/extra))
+4. If the ground-truth is created by [labelImg](https://github.com/tzutalin/labelImg) in **xml** format, you can generate the ground-truth txt files by `python CreateGroundTruth.py` (or you can find some scripts in [here](https://github.com/Cartucho/mAP/tree/master/extra))
 5. [run the mAP code](https://github.com/rafaelpadilla/Object-Detection-Metrics#optional-arguments)
 ---
 
